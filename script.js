@@ -56,9 +56,9 @@ function play() {
             pipe_sprite_props.top + collisionRange
         ) {
           game_state = "End";
+          img.style.display = "none";
           message.innerHTML =
             "<img src='images/gameOver.png' alt='Game Over' /><p><span style='color: blueviolet; font-size: 1.5em; font-weight: bold'>&#x23CE;</span><span style='color:white; font-size: 1.5em; font-weight: bold'> Enter to Restart</span></p>";
-          img.style.display = "none";
           sound_die.play();
           return;
         } else {
